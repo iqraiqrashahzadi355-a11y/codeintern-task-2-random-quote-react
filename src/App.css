@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.app.dark {
+  background: #020617 !important;
+}
+
+.quote-box {
+  background: white;
+  width: 400px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+.app.dark .quote-box {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mode {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.quote-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.quote-author {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.primary {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
